@@ -10,7 +10,7 @@
     </view>
   </view>
   <text wx:if="{{error}}" class="error">{{error}}</text>
-  <button class="submit" type="primary" disabled="{{!(username || password)}}" bindtap="save">更新</button>
+  <button class="submit" type="primary" disabled="{{!(username || password)}}" bindtap="save">登录</button>
   <text class="hint">通过小程序登录的用户会自动生成一个用户名</text>
   <text class="hint">修改用户名与密码后可以在 LeanTodo Web 端 (https://leancloud.github.io/leantodo-vue/) 登录</text>
 </view>

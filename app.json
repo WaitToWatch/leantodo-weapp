@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/todos/todos",
     "pages/user/user",
+    "pages/todos/todos",
     "pages/pay/pay",
     "pages/setting/setting"
   ],
@@ -9,8 +9,29 @@
     "enablePullDownRefresh": true,
     "backgroundTextStyle":"dark",
     "backgroundColor": "#f2f2f2",
-    "navigationBarBackgroundColor": "#fbfbfb",
+    "navigationBarBackgroundColor": "#66ccff",
     "navigationBarTitleText": "LeanTodo",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "res/tabar_home_normol.png",
+        "selectedIconPath": "res/tabar_home_select.png",
+        "pagePath": "pages/user/user",
+        "text": "用户登录"
+      },
+      {
+        "iconPath": "res/tabar_me_normol.png",
+        "selectedIconPath": "res/tabar_me_select.png",
+        "pagePath": "pages/todos/todos",
+        "text": "任务"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
 }
