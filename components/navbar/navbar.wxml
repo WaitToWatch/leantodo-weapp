@@ -1,0 +1,7 @@
+<!--pages/navbar/navbar.wxml-->
+
+  <view>
+    <text>{{leftContent}}</text>
+    <text>{{centerContent}}</text>
+    <text>{{rightContent}}</text>
+  </view>

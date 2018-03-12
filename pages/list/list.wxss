@@ -1,0 +1,7 @@
+/* pages/list/list.wxss */
+.first {
+  font-size: 18px;
+}
+.second {
+  color: red;
+}

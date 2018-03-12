@@ -1,0 +1,8 @@
+<!--pages/list/list.wxml-->
+<view>
+  <navbar leftContent="left" centerContent="center" rightContent="right"></navbar>
+  <view wx:for="{{array}}" wx:key="item"> 
+    <text class="first">{{item.title}}</text>
+    <text class="second">{{item.content}}</text>
+  </view>
+</view>
