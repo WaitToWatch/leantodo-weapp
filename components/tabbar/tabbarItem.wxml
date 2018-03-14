@@ -1,0 +1,5 @@
+<!--components/tabbar/tabbarItem.wxml-->
+<view class="item" bindtap='itemClick'>
+  <image class="icon" src="{{isSelect?selectSrc:src}}"></image>
+  <text style="color:{{isSelect?'red':'green'}}">{{text}}</text>
+</view>

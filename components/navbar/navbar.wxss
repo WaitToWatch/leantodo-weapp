@@ -1,1 +1,10 @@
 /* pages/navbar/navbar.wxss */
+.left{
+  font-size: 10px;
+}
+.center{
+  font-size: 14px;
+}
+.right{
+  font-size: 18px;
+}

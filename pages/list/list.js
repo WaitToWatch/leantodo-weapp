@@ -6,11 +6,17 @@ Page({
    */
   data: {
     array: [{
-      title:'1',
-      content:'11',
+      index: 0,
+      text: '首页',
+      src: '../../res/tabar_home_normol.png',
+      selectSrc: '../../res/tabar_home_select.png',
+      isSelect: true,
     }, {
-      title: '2',
-      content: '22',
+      index: 1,
+      text: '我的',
+      src: '../../res/tabar_me_normol.png',
+      selectSrc: '../../res/tabar_me_select.png',
+      isSelect: false,
     }],
     navbarData:{
       leftContent:'left',
@@ -73,5 +79,23 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  rightClick: function (e) {
+    wx.showToast({
+      title: e.detail,
+      icon: 'success',
+      duration: 1000
+    })
+  },
+  tabbarClick: function(e){
+    console.log(this.data.array[0].isSelect + '---' + this.data.array[1].isSelect)
+    // this.data.array = e.detail
+    this.setData({ array: e.detail })
+    // if (e.detail.index == this.data.selectIndex) return;
+    // this.data.array[this.data.selectIndex].isSelect = false
+    // this.data.array[e.detail.index].isSelect = true
+    // this.data.selectIndex = e.detail.index,
+    // //必须要进行setData使得数据在界面上生效
+    // this.setData({ array: this.data.array })
   }
 })

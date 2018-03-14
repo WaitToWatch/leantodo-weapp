@@ -1,0 +1,10 @@
+<!--components/tabbar.wxml-->
+<view class="window">
+  <view class="content">
+    <slot></slot>
+  </view>
+  <view class="bottom-bar">
+    <tabbarItem class="item" wx:for="{{array}}" wx:for-item="item" wx:key="{{item.text}}" index="{{item.index}}" text="{{item.text}}" src="{{item.src}}" selectSrc="{{item.selectSrc}}" is-select="{{item.isSelect}}" bind:tabbarItemClick="itemClick">
+    </tabbarItem>
+  </view>
+</view>

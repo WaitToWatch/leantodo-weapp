@@ -1,0 +1,10 @@
+/* components/tabbar/tabbarItem.wxss */
+.item{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.icon{
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,16 @@
+/* components/tabbar.wxss */
+.item{
+  flex: 1;
+}
+.bottom-bar{
+  display: flex;
+  flex-direction: row;
+}
+.content{
+  display: flex;
+  flex:1;
+}
+.window{
+  display: flex;
+  flex-direction: column;
+}

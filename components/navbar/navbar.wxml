@@ -1,7 +1,7 @@
 <!--pages/navbar/navbar.wxml-->
 
   <view>
-    <text>{{leftContent}}</text>
-    <text>{{centerContent}}</text>
-    <text>{{rightContent}}</text>
+    <text class="left" bindtap='showLoading'>{{leftContent}}</text>
+    <text class="center" bindtap='hideLoading'>{{centerContent}}</text>
+    <text class="right" bindtap='rightClick'>{{rightContent}}</text>
   </view>
